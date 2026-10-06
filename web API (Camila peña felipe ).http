@@ -1,0 +1,6 @@
+@web_API__Camila_peña_felipe___HostAddress = http://localhost:5230
+
+GET {{web_API__Camila_peña_felipe___HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
