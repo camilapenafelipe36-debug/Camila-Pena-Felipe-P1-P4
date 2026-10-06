@@ -52,4 +52,4 @@ jobs:
           app-name: 'camila-p1-p4-api'
           slot-name: 'Production'
           package: .
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_63C7F6A84D3444CB932C780F137E012A }}
+        publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_63C7F6A84D3444CB932C780F137E012A }}  }
