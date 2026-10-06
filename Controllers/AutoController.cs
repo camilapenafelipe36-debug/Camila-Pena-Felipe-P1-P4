@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 
 [ApiController]
 [Route("api/[controller]")]
@@ -10,7 +10,7 @@ public class AutoController : ControllerBase
         return Ok(new
         {
             mensaje = "API funcionando correctamente",
-            nombre = "Camila Peña Felipe"
+            nombre = "Camila Pena Felipe"
         });
     }
 
@@ -32,6 +32,16 @@ public class AutoController : ControllerBase
             mensaje = "Datos actualizados correctamente",
             id = id,
             datos = auto
+        });
+    }
+
+    [HttpDelete("{id}")]
+    public IActionResult Delete(int id)
+    {
+        return Ok(new
+        {
+            mensaje = "Autor eliminado correctamente",
+            id = id
         });
     }
 }
